@@ -36,6 +36,14 @@
 
   </head>
   <body>
+
+    <script src="./assets/js/vanilla-back-to-top.min.js"></script>
+    <script>addBackToTop({
+      diameter: 56,
+      backgroundColor: '#0B3460',
+      textColor: '#fff'
+    })</script>
+
     <div class="wrapper">
       <header>
         
@@ -63,6 +71,12 @@
         {% if site.google_scholar %}
         <a style="margin: 0 5px 0 0" href="{{ site.google_scholar }}">
           <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
+        </a>  
+        {% endif %}
+
+        {% if site.research_gate %}
+        <a style="margin: 0 5px 0 0" href="{{ site.research_gate }}">
+          <i class="fa-brands fa-researchgate" style="font-size:1.2rem"></i>
         </a>  
         {% endif %}
 
